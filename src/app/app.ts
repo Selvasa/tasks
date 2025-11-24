@@ -1,12 +1,12 @@
 import { Component } from '@angular/core';
-import { RouterOutlet } from '@angular/router';
+import { TemplateEditor } from './components/day1-template-editor/template-editor';
 
 @Component({
   selector: 'app-root',
-  imports: [RouterOutlet],
+  imports: [TemplateEditor],
   templateUrl: './app.html',
   styleUrl: './app.scss'
 })
 export class App {
-  protected title = 'tasks';
+  
 }

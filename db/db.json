@@ -1,0 +1,19 @@
+{
+  "templates": [
+    {
+      "id": "1",
+      "name": "Welcome Template",
+      "value": "<h2>Welcome to our html Editor!</h2><p>Hi everyone,</p><p>Thank you for joining us. We are excited to have you onboard.</p><p>Let us know if you need any help getting started.</p><p>Best regards,<br><strong>The Team ok done</strong></p><p><strong>this is my name</strong></p><ol><li><p>my name is abcd</p></li><li><p>this is line number 2</p></li></ol>"
+    },
+    {
+      "id": "2",
+      "name": "task Template",
+      "value": "<h1><strong>Create a page for updating email templates.</strong></h1><ol><li><p style=\"text-align: justify;\">The user will have a Template dropdown containing at least two templates.</p></li><li><p>When the user selects a template, its design/preview should be displayed below.</p></li><li><p>An Edit icon should be available.<br>&nbsp;* When the user clicks the Edit icon, the UI should switch to an HTML editor box where the template content can be edited or updated.<br>&nbsp;* A Save button should appear at the bottom.</p></li><li><p>After the user updates the template and clicks Save, the editor should close and the template preview should appear again in place of the HTML editor.</p></li></ol>"
+    },
+    {
+      "id": "3",
+      "name": "Day-1 Template",
+      "value": "<h3>Create a page for updating email templates.</h3><ul><li><p>The user will have a Template dropdown containing at least two templates.</p></li><li><p>When the user selects a template, its design/preview should be displayed below.</p></li><li><p>An Edit icon should be available.<br>&nbsp;* When the user clicks the Edit icon, the UI should switch to an HTML editor box where the template content can be edited or updated.<br>&nbsp;* A Save button should appear at the bottom.</p></li><li><p>After the user updates the template and clicks Save, the editor should close and the template preview should appear again in place of the HTML editor.</p><p>&lt;span&gt;Hi how are you&lt;/span&gt;</p></li></ul>"
+    }
+  ]
+}
