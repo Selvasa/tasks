@@ -1,0 +1,31 @@
+<div class="html-editor-style mt-5">
+  <h3>Select Template</h3>
+  <div class="col-6">
+    <select class="form-control" (change)="onSelectTemplate($event)">
+      @for(item of templates();track item?.id){
+      <option [value]="item?.id">{{item?.name}}</option>
+      }
+    </select>
+  </div>
+
+  <div class="mt-4 h-75 preview-edit-style">
+    @if(isEdit()){
+    <button class="btn btn-secondary mb-3 col-2" (click)="onEdit()">Edit</button>
+    }
+    @if(previewMode() && !editMode()){
+    <iframe [srcdoc]="templateValue" class="preview-style"></iframe>
+    <!-- <section [innerHTML]="templateValue()"></section> -->
+    }
+    @if(editMode()) {
+    <textarea class="text-area-style form-control" #event>
+    {{ unsanitized_template_value }}
+    </textarea>
+
+    @if(isSave()){
+    <button (click)="updateValue(event.value)" class="btn btn-success mt-3 col-2">Save</button>
+    }
+    }
+
+  </div>
+
+</div>
