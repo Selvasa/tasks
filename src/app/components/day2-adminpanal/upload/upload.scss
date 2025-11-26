@@ -1,0 +1,23 @@
+.upload-btn {
+    background: #4a90e2;
+    color: white;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    display: inline-block;
+}
+
+.upload-btn:hover {
+    background: #357ab7;
+}
+
+.upload-btn input {
+    display: none;
+}
+
+.success-snackbar {
+    background: #4caf50;
+    color: white;
+    font-size: 16px;
+}
