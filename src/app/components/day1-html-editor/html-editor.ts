@@ -6,7 +6,7 @@ import { FormsModule } from "@angular/forms";
 import { single } from "rxjs";
 import { DomSanitizer, SafeHtml } from "@angular/platform-browser";
 
-@Component({ selector: "app-html-editor", styleUrl: './html-editor.scss', templateUrl: './html-editor.html', standalone: true, imports: [FormsModule, NgIf] })
+@Component({ selector: "app-html-editor", styleUrl: './html-editor.scss', templateUrl: './html-editor.html', standalone: true, imports: [FormsModule] })
 export class HTMLEditor implements OnInit {
 
     templates = signal<TemplateModel[]>([])

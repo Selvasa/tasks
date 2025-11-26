@@ -15,5 +15,43 @@
       "name": "Day-1 Template",
       "id": "3"
     }
+  ],
+  "users": [
+    {
+      "id": 1,
+      "name": "Arun Kumar",
+      "email": "arun@example.com",
+      "role": "admin"
+    },
+    {
+      "id": 2,
+      "name": "Selvi Raj",
+      "email": "selvi@example.com",
+      "role": "user"
+    },
+    {
+      "id": 3,
+      "name": "Manoj",
+      "email": "manoj@example.com",
+      "role": "user"
+    },
+    {
+      "id": 4,
+      "name": "Karthik",
+      "email": "karthik@example.com",
+      "role": "editor"
+    },
+    {
+      "id": 5,
+      "name": "Priya",
+      "email": "priya@example.com",
+      "role": "user"
+    },
+    {
+      "id": 6,
+      "name": "ram kum",
+      "email": "ram@gmail.com",
+      "role": "user"
+    }
   ]
 }

@@ -1,0 +1,37 @@
+<div class="admin-panel">
+   
+    <div class=" bg p-3">
+        <div class="text-center display-6 fw-normal text-white">Admin Page</div>
+    </div>
+    
+    <div class="main">
+        <mat-drawer-container class="example-container">
+            <mat-drawer #drawer mode="side" opened class="left-drawer">
+                <span class="drawer-toggle">
+                    @if(!isToggle){
+                    <mat-icon class="menu-icon text-white" (click)="drawer.toggle();isToggle=true">
+                        menu
+                    </mat-icon>
+                    }
+                </span>
+
+                <div class="box" routerLink="email-template">Email Template</div>
+                <div class="box" routerLink="upload">Bulk Upload</div>
+                <div class="box" routerLink="users">Users</div>
+            </mat-drawer>
+
+            <mat-drawer-content class="main-content">
+                <span class="drawer-content-toggle">
+                    @if(isToggle){
+                    <mat-icon class="menu-icon" (click)="drawer.toggle();isToggle=false">
+                        menu
+                    </mat-icon>
+                    }
+                </span>
+                <router-outlet></router-outlet>
+            </mat-drawer-content>
+        </mat-drawer-container>
+
+    </div>
+
+</div>

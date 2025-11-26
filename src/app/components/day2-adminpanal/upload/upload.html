@@ -1,0 +1,31 @@
+<div class="bulk-upload">
+    <div class="mt-4">
+        <h2 class="text-start ms-5">Bulk Upload</h2>
+    </div>
+    <div class="mt-4">
+        <div class="ms-5">
+            <button class="btn btn-success" (click)="downloadCSV()">
+                Download CSV
+            </button>
+        </div>
+    </div>
+    <div class="action-btn mt-4">
+        <h4 class="text-start ms-5">Bulk Upload Instructions</h4>
+        <ul class="bulk-info-list ms-5">
+            <li>You can upload multiple users at once using a CSV file.</li>
+            <li>The CSV must contain the required headers: <strong>id, name, email, role</strong>.</li>
+            <li>You can download a sample CSV template using the <strong>Download</strong> button </li>
+            <li>Newly uploaded users will be <strong>added</strong> to your existing user list.</li>
+            <li>Duplicate emails or invalid entries will be <strong>skipped</strong>.</li>
+            <li>Make sure the CSV does not contain empty rows.</li>
+            <li>Ensure all email IDs are properly formatted.</li>
+            <li>Only <strong>.csv</strong> files are supported for upload.</li>
+        </ul>
+        <div class="ms-5">
+            <label class="upload-btn">
+                Choose CSV
+                <input type="file" accept=".csv" (change)="uploadCSV($event)">
+            </label>
+        </div>
+    </div>
+</div>
